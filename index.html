@@ -44,19 +44,16 @@
             height: auto;
         }
 
-        #specs-button,
-        #want-button {
+        .button {
             background-color: #e74c3c; /* Red button color */
             color: #ffffff; /* White text color */
-            padding: 10px 20px;
+            padding: 15px 30px; /* Adjusted padding to make both buttons the same size */
             border: none;
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
-            margin-top: 20px; /* Increased margin to create space */
             display: block; /* Ensures they are block-level elements */
-            margin-left: auto; /* Centers the buttons horizontally */
-            margin-right: auto; /* Centers the buttons horizontally */
+            margin: 20px auto; /* Centers the buttons horizontally and adds margin for space */
         }
 
         .social-container {
@@ -73,6 +70,9 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            background-color: #1f2c38; /* Darker blue for the wrapper */
+            padding: 15px; /* Padding around the social buttons */
+            border-radius: 8px; /* Rounded corners for the wrapper */
         }
 
         .social-button {
@@ -83,6 +83,24 @@
             text-decoration: none;
             border-radius: 8px;
             font-size: 16px;
+        }
+
+        #want-image {
+            width: 85%; /* Downscale the image by 15% */
+            height: auto;
+        }
+
+        #want-button,
+        #specs-button {
+            background-color: #e74c3c; /* Red button color */
+            color: #ffffff; /* White text color */
+            padding: 15px 30px; /* Adjusted padding to make both buttons the same size */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block; /* Ensures they are inline-block elements */
+            margin: 20px 10px; /* Adds margin between the buttons */
         }
     </style>
 </head>
@@ -97,14 +115,13 @@
     <div id="monitor-section">
         <h2>My Monitor</h2>
         <img id="monitor-image" src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=8271001-847&recipeName=344&viewId=1" alt="Monitor Image">
-        <a id="specs-button" href="https://www.costco.com/msi-27%22-fhd-ips-nvidia-g-sync-gaming-monitor-optix-g273.product.100805677.html" target="_blank">Specs</a>
+        <a id="specs-button" href="https://www.costco.com/msi-27%22-fhd-ips-nvidia-g-sync-gaming-monitor-optix-g273.product.100805677.html" target="_blank" class="button">Specs</a>
     </div>
 
-    <!-- Monitor I Want Section -->
-    <div id="monitor-want-section">
+            <!-- Monitor I Want Section -->
         <h2>Monitor I Want</h2>
         <img id="want-image" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/alienware/aw2524h/media-gallery/monitor-alienware-aw2524h-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4316&hei=3095&qlt=100,1&resMode=sharp2&size=4316,3095&chrss=full&imwidth=5000" alt="Desired Monitor Image">
-        <a id="want-button" href="https://www.dell.com/en-us/shop/alienware-500hz-gaming-monitor-aw2524h/apd/210-bglm/monitors-monitor-accessories" target="_blank">Get This Monitor</a>
+        <a id="want-button" href="https://www.dell.com/en-us/shop/alienware-500hz-gaming-monitor-aw2524h/apd/210-bglm/monitors-monitor-accessories" target="_blank" class="button">Get This Monitor</a>
     </div>
 
     <!-- Social Buttons -->
